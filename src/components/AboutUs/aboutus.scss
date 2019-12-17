@@ -1,0 +1,40 @@
+.aboutus {
+  background-color: #F5F5F5;
+
+
+  &-content {
+    margin-bottom:  2rem;
+    @media (min-width: 768px) {
+      padding-right: 2rem !important;
+    }
+  }
+
+  &-btn {
+    text-align: center;
+    display: block !important;
+
+    @media (min-width: 768px) {
+display: inline !important;    }
+  }
+  &-pic-wrapper {
+    // overflow: hidden;
+    width: 100% !important;
+    height: 400px;
+    background-image: url('../../assets/img/bg-1.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    // > img {
+    //   height: 100%;
+    //   width: 100%;
+    // }
+  }
+
+  &-sub {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}

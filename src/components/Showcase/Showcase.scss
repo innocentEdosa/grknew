@@ -1,0 +1,50 @@
+.showcase {
+background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, rgba(58, 96, 115, 0.7), rgba(22, 34, 42, 0.7)),url('../../assets/img/carousel-1.jpeg');  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, rgba(58, 96, 115, 0.7), rgba(22, 34, 42, 0.7)),url('../../assets/img/carousel-1.jpeg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-position: center;
+background-size: cover;
+  height: 90vh;
+  display: relative;
+  margin-bottom: 0rem !important;
+
+  &-content {
+    height: 80vh;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+
+    }
+  }
+
+  &-heading {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--color-light);
+    text-shadow:var(--text-shadow-primary);
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      font-weight: 500;
+
+    }
+  }
+
+  &-line {
+    color: var(--color-primary);
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
